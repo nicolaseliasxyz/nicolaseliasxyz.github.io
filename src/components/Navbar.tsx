@@ -5,9 +5,9 @@ import Logo from "../assets/crosshair.svg";
 function Navbar() {
   return (
     <VFlow
-      style={css`
-        align-items: center;
-      `}
+    // style={css`
+    //   align-items: center;
+    // `}
     >
       <HFlow
         style={css`
@@ -15,6 +15,7 @@ function Navbar() {
           height: 4rem;
         `}
       >
+        <Icon icon="rocket" size={2} style={{ marginRight: "22rem" }} />
         <Button
           size="medium"
           skin="ghost"
