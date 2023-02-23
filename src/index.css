@@ -1,0 +1,12 @@
+html,
+body,
+#root {
+  background-color: #15141b;
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: "JetBrains Mono", sans-serif;
+}
