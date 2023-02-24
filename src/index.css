@@ -2,6 +2,7 @@ html,
 body,
 #root {
   background-color: #15141b;
+  font-color: white;
 }
 
 * {
@@ -9,4 +10,10 @@ body,
   margin: 0;
   box-sizing: border-box;
   font-family: "JetBrains Mono", sans-serif;
+}
+
+.eu {
+  width: 20rem;
+  height: 20rem;
+  border-radius: 2rem;
 }

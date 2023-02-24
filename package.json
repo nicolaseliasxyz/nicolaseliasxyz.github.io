@@ -9,6 +9,7 @@
     "preview": "vite preview"
   },
   "dependencies": {
+    "@deadcoder0904/react-typical": "^0.1.2",
     "all": "^0.0.0",
     "bold-ui": "^1.0.0-beta.51",
     "lodash": "^4.17.21",
