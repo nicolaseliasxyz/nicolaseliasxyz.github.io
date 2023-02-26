@@ -24,11 +24,13 @@
     "react": "^18.2.0",
     "react-animated-3d-card": "^1.0.2",
     "react-dom": "^18.2.0",
+    "react-icons": "^4.7.1",
     "react-router-dom": "^6.8.1",
     "react-typed": "^1.2.0",
     "react-typist": "^2.0.5",
     "react-typist-loop": "^1.0.0",
-    "three": "^0.150.0"
+    "three": "^0.150.0",
+    "use-sound": "^4.0.1"
   },
   "devDependencies": {
     "@types/react": "^18.0.27",

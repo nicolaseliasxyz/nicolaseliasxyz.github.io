@@ -1,7 +1,7 @@
 import { HFlow, VFlow, Text } from "bold-ui";
 import Typed from "react-typed";
 import { css } from "@emotion/core";
-import Eu from "../assets/eu.png";
+import MusicPlayer from "./MusicPlayer";
 
 function Home() {
   return (
@@ -10,8 +10,6 @@ function Home() {
         color: white;
       `}
     >
-      <img src={Eu} className="eu" />
-
       <Text
         fontWeight="bold"
         fontSize={2}
@@ -39,6 +37,7 @@ function Home() {
           loop
         />
       </Text>
+      <MusicPlayer />
     </VFlow>
   );
 }

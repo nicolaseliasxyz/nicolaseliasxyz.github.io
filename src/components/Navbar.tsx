@@ -11,6 +11,9 @@ function Navbar() {
         box-shadow: 10px 10px 10px #000000;
         padding: 1rem;
         background-color: #110f18;
+        position: fixed;
+        width: 100%;
+        z-index: 15;
       `}
     >
       <HFlow

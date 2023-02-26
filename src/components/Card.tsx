@@ -12,15 +12,15 @@ function Card(props: CardProps) {
     <VFlow
       style={css`
         align-items: center;
+        background-color: #110f18;
         border: 1px solid;
         border-radius: 1rem;
         color: white;
         padding: 1rem;
-        background-color: #110f18;
         margin: 1rem auto;
         align-items: center;
         max-width: 300px;
-        box-shadow: 10px 10px 10px #000000;
+        box-shadow: 7px 7px 7px #000000;
       `}
     >
       <Text

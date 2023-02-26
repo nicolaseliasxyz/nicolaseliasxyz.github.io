@@ -5,7 +5,7 @@ import "./index.css";
 import { createBrowserRouter, RouterProvider } from "react-router-dom";
 import Inicial from "./routes/Inicial";
 import Github from "./routes/Github";
-import Contact from "./components/Footer";
+import Contact from "./routes/Contact";
 import ErrorPage from "./routes/ErrorPage";
 import SobreEu from "./routes/SobreEu";
 

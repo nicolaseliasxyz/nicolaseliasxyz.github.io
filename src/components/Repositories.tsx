@@ -12,6 +12,9 @@ function Repositories() {
       <HFlow
         style={css`
           max-width: 980px;
+          @media screen {
+            margin-left: 3rem;
+          }
         `}
       >
         <Grid>
