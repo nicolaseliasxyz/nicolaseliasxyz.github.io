@@ -2,9 +2,41 @@ import React from "react";
 import ReactDOM from "react-dom/client";
 import App from "./App";
 import "./index.css";
+import { createBrowserRouter, RouterProvider } from "react-router-dom";
+import Inicial from "./routes/Inicial";
+import Github from "./routes/Github";
+import Contact from "./components/Footer";
+import ErrorPage from "./routes/ErrorPage";
+import SobreEu from "./routes/SobreEu";
+
+const router = createBrowserRouter([
+  {
+    path: "/",
+    element: <App />,
+    errorElement: <ErrorPage />,
+    children: [
+      {
+        path: "/",
+        element: <Inicial />,
+      },
+      {
+        path: "/github",
+        element: <Github />,
+      },
+      {
+        path: "/contato",
+        element: <Contact />,
+      },
+      {
+        path: "/sobre",
+        element: <SobreEu />,
+      },
+    ],
+  },
+]);
 
 ReactDOM.createRoot(document.getElementById("root") as HTMLElement).render(
   <React.StrictMode>
-    <App />
+    <RouterProvider router={router} />
   </React.StrictMode>
 );

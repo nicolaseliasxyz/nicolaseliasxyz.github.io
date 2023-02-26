@@ -1,8 +1,7 @@
 import { HFlow, VFlow, Text } from "bold-ui";
-import { ReactTypical } from "@deadcoder0904/react-typical";
+import Typed from "react-typed";
 import { css } from "@emotion/core";
-import Eu from "../assets/eu.jpeg";
-import "../index.css";
+import Eu from "../assets/eu.png";
 
 function Home() {
   return (
@@ -12,28 +11,34 @@ function Home() {
       `}
     >
       <img src={Eu} className="eu" />
+
       <Text
         fontWeight="bold"
-        fontSize={1.5}
+        fontSize={2}
         style={css`
           color: white;
         `}
       >
-        Olá, Me chamo Nicolas
+        Olá, Me chamo Nicolas.
       </Text>
-      <ReactTypical
-        steps={[
-          "Desenvolvedor Web",
-          2500,
-          "Estudante de Computação",
-          2500,
-          "Aprendendo mais a cada dia!",
-          3000,
-        ]}
-        wrapper="h2"
-        loop={Infinity}
-        className="sayMyName"
-      />
+      <Text
+        fontWeight="bold"
+        fontSize={2.5}
+        style={css`
+          color: white;
+        `}
+      >
+        <Typed
+          strings={[
+            "Desenvolvedor Full Stack.",
+            "Amante de Computação.",
+            "Estudante de Ciências da Computação.",
+          ]}
+          typeSpeed={50}
+          backSpeed={80}
+          loop
+        />
+      </Text>
     </VFlow>
   );
 }

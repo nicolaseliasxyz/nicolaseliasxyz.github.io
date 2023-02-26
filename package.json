@@ -10,6 +10,10 @@
   },
   "dependencies": {
     "@deadcoder0904/react-typical": "^0.1.2",
+    "@react-spring/web": "^9.7.0",
+    "@react-three/fiber": "^8.11.5",
+    "@types/react-typist": "^2.0.3",
+    "@types/three": "^0.149.0",
     "all": "^0.0.0",
     "bold-ui": "^1.0.0-beta.51",
     "lodash": "^4.17.21",
@@ -18,7 +22,13 @@
     "lodash.isequal": "^4.5.0",
     "lodash.merge": "^4.6.2",
     "react": "^18.2.0",
-    "react-dom": "^18.2.0"
+    "react-animated-3d-card": "^1.0.2",
+    "react-dom": "^18.2.0",
+    "react-router-dom": "^6.8.1",
+    "react-typed": "^1.2.0",
+    "react-typist": "^2.0.5",
+    "react-typist-loop": "^1.0.0",
+    "three": "^0.150.0"
   },
   "devDependencies": {
     "@types/react": "^18.0.27",
