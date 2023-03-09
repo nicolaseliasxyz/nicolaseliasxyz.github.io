@@ -1,43 +1,63 @@
 import { HFlow, VFlow, Text } from "bold-ui";
 import Typed from "react-typed";
 import { css } from "@emotion/core";
-import MusicPlayer from "./MusicPlayer";
+import test from "../assets/teste2.gif";
 
 function Home() {
   return (
     <VFlow
       style={css`
         color: white;
+        margin: 1rem;
       `}
     >
-      <Text
-        fontWeight="bold"
-        fontSize={2}
+      <VFlow
         style={css`
-          color: white;
+          @media screen and (max-width: 420px) {
+            height: 14rem;
+          }
         `}
       >
-        Olá, Me chamo Nicolas.
-      </Text>
-      <Text
-        fontWeight="bold"
-        fontSize={2.5}
-        style={css`
-          color: white;
-        `}
-      >
-        <Typed
-          strings={[
-            "Desenvolvedor Full Stack.",
-            "Amante de Computação.",
-            "Estudante de Ciências da Computação.",
-          ]}
-          typeSpeed={50}
-          backSpeed={80}
-          loop
-        />
-      </Text>
-      <MusicPlayer />
+        <Text
+          fontWeight="bold"
+          fontSize={2}
+          style={css`
+            color: white;
+          `}
+        >
+          Olá, Me chamo{" "}
+          <Text
+            fontWeight="bold"
+            fontSize={2}
+            style={css`
+              color: #61ffca;
+            `}
+          >
+            Nicolas
+          </Text>
+          .
+        </Text>
+
+        <Text
+          fontWeight="bold"
+          fontSize={2.5}
+          style={css`
+            color: white;
+          `}
+        >
+          <Typed
+            strings={[
+              "Desenvolvedor Full Stack.",
+              "Amante de Computação.",
+              "Estudante de Ciências da Computação.",
+            ]}
+            typeSpeed={50}
+            backSpeed={80}
+            loop
+          />
+        </Text>
+      </VFlow>
+      <img src={test} className="giff" />
     </VFlow>
   );
 }

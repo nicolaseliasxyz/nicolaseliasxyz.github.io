@@ -13,10 +13,30 @@ body,
 }
 
 .eu {
-  margin-top: 12rem;
-  margin-right: 8rem;
-  width: 28rem;
-  height: 28rem;
+  width: 30rem;
+  height: 30rem;
   border-radius: 40rem;
   box-shadow: 5px 5px 5px #000000;
+  margin-top: 4rem;
+}
+
+.giff {
+  width: 30rem;
+  height: 30rem;
+  border-radius: 40rem;
+  box-shadow: 5px 5px 5px #000000;
+}
+
+@media screen and (max-width: 420px) {
+  .eu {
+    width: 18rem;
+    height: 18rem;
+    margin-left: 4.5rem;
+    margin-bottom: 1rem;
+    margin-top: 0rem;
+  }
+  .giff {
+    width: 18rem;
+    height: 18rem;
+  }
 }

@@ -27,7 +27,7 @@ function Card(props: CardProps) {
         fontSize={1.4}
         fontWeight="bold"
         style={css`
-          color: white;
+          color: #61ffca;
           margin-bottom: 0.2rem;
         `}
       >
@@ -53,7 +53,7 @@ function Card(props: CardProps) {
           size="large"
           skin="outline"
           style={css`
-            color: white;
+            color: #e472f3;
           `}
         >
           Acessar Repositorio
