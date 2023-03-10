@@ -1,6 +1,6 @@
 import { HFlow, VFlow, Text, Button } from "bold-ui";
 import { css } from "@emotion/core";
-import music from "../assets/music/Rough Nights-Artificial.MusicMehulShaRma-(NoCopyrightMusic).mp3";
+import music from "../assets/music/She-Dont-Droid-Bishop.mp3";
 import { useState } from "react";
 import { BsFillPauseFill, BsPlay } from "react-icons/bs";
 
