@@ -41,7 +41,7 @@ function Navbar() {
           </Button>
         </Link>
         <Link
-          href="/sobre"
+          href="/#/sobre"
           style={css`
             text-decoration: none;
             color: white;
@@ -58,7 +58,7 @@ function Navbar() {
           </Button>
         </Link>
         <Link
-          href="/github"
+          href="/#/github"
           style={css`
             text-decoration: none;
             color: white;
@@ -75,7 +75,7 @@ function Navbar() {
           </Button>
         </Link>
         <Link
-          href="/contato"
+          href="/#/contato"
           style={css`
             text-decoration: none;
             color: white;

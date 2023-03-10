@@ -2,14 +2,14 @@ import React from "react";
 import ReactDOM from "react-dom/client";
 import App from "./App";
 import "./index.css";
-import { createBrowserRouter, RouterProvider } from "react-router-dom";
+import { RouterProvider, createHashRouter } from "react-router-dom";
 import Inicial from "./routes/Inicial";
 import Github from "./routes/Github";
 import Contact from "./routes/Contact";
 import ErrorPage from "./routes/ErrorPage";
 import SobreEu from "./routes/SobreEu";
 
-const router = createBrowserRouter([
+const router = createHashRouter([
   {
     path: "/",
     element: <App />,

@@ -9,6 +9,9 @@ function Home() {
       style={css`
         color: white;
         margin: 1rem;
+        @media screen and (max-width: 420px) {
+          margin-top: -2rem;
+        }
       `}
     >
       <VFlow
@@ -48,7 +51,7 @@ function Home() {
           <Typed
             strings={[
               "Desenvolvedor Full Stack.",
-              "Amante de Computação.",
+              "Apaixonado por Tecnologia.",
               "Estudante de Ciências da Computação.",
             ]}
             typeSpeed={50}
