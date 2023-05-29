@@ -11,7 +11,8 @@
   "dependencies": {
     "@deadcoder0904/react-typical": "^0.1.2",
     "@react-spring/web": "^9.7.0",
-    "@react-three/fiber": "^8.11.5",
+    "@react-three/drei": "^9.70.0",
+    "@react-three/fiber": "^8.13.0",
     "@types/react-typist": "^2.0.3",
     "@types/three": "^0.149.0",
     "all": "^0.0.0",
@@ -29,7 +30,7 @@
     "react-typed": "^1.2.0",
     "react-typist": "^2.0.5",
     "react-typist-loop": "^1.0.0",
-    "three": "^0.150.0",
+    "three": "^0.150.1",
     "use-sound": "^4.0.1"
   },
   "devDependencies": {

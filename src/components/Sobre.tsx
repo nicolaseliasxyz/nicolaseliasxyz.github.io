@@ -22,7 +22,7 @@ function Sobre() {
           margin-bottom: 5rem;
           margin-left: 1.8rem;
           margin-right: 1rem;
-          background-color: #110f18;
+          background-color: #111111;
           border: 0.2px solid;
           border-radius: 1rem;
           box-shadow: 5px 5px 5px #000000;

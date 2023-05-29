@@ -1,11 +1,12 @@
-import { HFlow, VFlow, Text } from "bold-ui";
+import { VFlow, Text } from "bold-ui";
 import Typed from "react-typed";
 import { css } from "@emotion/core";
-import test from "../assets/teste2.gif";
+import RenderThree from "./threejs/RenderThree";
 
 function Home() {
   return (
     <VFlow
+      vSpacing={0}
       style={css`
         color: white;
         margin: 1rem;
@@ -60,7 +61,7 @@ function Home() {
           />
         </Text>
       </VFlow>
-      <img src={test} className="giff" />
+      <RenderThree />
     </VFlow>
   );
 }
