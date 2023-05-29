@@ -19,91 +19,85 @@ function Navbar() {
     >
       <HFlow
         style={css`
-          align-items: flex-start;
+          width: 100%;
+          height: 4rem;
+          align-items: center;
         `}
       >
-        <HFlow
+        <Link
+          href="/"
           style={css`
-            width: 100%;
-            height: 4rem;
-            align-items: center;
+            text-decoration: none;
+            color: white;
           `}
         >
-          <Link
-            href="/"
+          <Button
+            size="medium"
+            skin="outline"
             style={css`
-              text-decoration: none;
               color: white;
             `}
           >
-            <Button
-              size="medium"
-              skin="outline"
-              style={css`
-                color: white;
-              `}
-            >
-              <img
-                src={logo}
-                alt="Rocket"
-                className="logo"
-                style={{ marginRight: "1rem" }}
-              />
-              HOME
-            </Button>
-          </Link>
-          <Link
-            href="/#/sobre"
+            <img
+              src={logo}
+              alt="Rocket"
+              className="logo"
+              style={{ marginRight: "1rem" }}
+            />
+            HOME
+          </Button>
+        </Link>
+        <Link
+          href="/#/sobre"
+          style={css`
+            text-decoration: none;
+            color: white;
+          `}
+        >
+          <Button
+            size="medium"
+            skin="outline"
             style={css`
-              text-decoration: none;
               color: white;
             `}
           >
-            <Button
-              size="medium"
-              skin="outline"
-              style={css`
-                color: white;
-              `}
-            >
-              SOBRE
-            </Button>
-          </Link>
-          <Link
-            href="/#/github"
+            SOBRE
+          </Button>
+        </Link>
+        <Link
+          href="/#/github"
+          style={css`
+            text-decoration: none;
+            color: white;
+          `}
+        >
+          <Button
+            size="medium"
+            skin="outline"
             style={css`
-              text-decoration: none;
               color: white;
             `}
           >
-            <Button
-              size="medium"
-              skin="outline"
-              style={css`
-                color: white;
-              `}
-            >
-              GITHUB
-            </Button>
-          </Link>
-          <Link
-            href="/#/contato"
+            GITHUB
+          </Button>
+        </Link>
+        <Link
+          href="/#/contato"
+          style={css`
+            text-decoration: none;
+            color: white;
+          `}
+        >
+          <Button
+            size="medium"
+            skin="outline"
             style={css`
-              text-decoration: none;
               color: white;
             `}
           >
-            <Button
-              size="medium"
-              skin="outline"
-              style={css`
-                color: white;
-              `}
-            >
-              CONTATO
-            </Button>
-          </Link>
-        </HFlow>
+            CONTATO
+          </Button>
+        </Link>
       </HFlow>
     </VFlow>
   );

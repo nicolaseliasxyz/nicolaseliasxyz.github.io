@@ -1,11 +1,13 @@
-import { HFlow, VFlow, Text, Grid, Cell, Link } from "bold-ui";
+import { VFlow, Text, Grid, Cell, Link } from "bold-ui";
 import { css } from "@emotion/core";
 import Eu from "../assets/eu.png";
 import { DiGit, DiGithubBadge, DiJsBadge, DiLinux } from "react-icons/di";
 import { DiPython } from "react-icons/di";
 import {
   SiCypress,
+  SiDocker,
   SiGraphql,
+  SiJava,
   SiJunit5,
   SiReact,
   SiTypescript,
@@ -16,11 +18,12 @@ function Sobre() {
   return (
     <Grid>
       <img src={Eu} className="eu" />
+
       <VFlow
         style={css`
           align-items: flex-start;
           margin-bottom: 5rem;
-          margin-left: 1.8rem;
+          margin-left: 1rem;
           margin-right: 1rem;
           background-color: #111111;
           border: 0.2px solid;
@@ -36,7 +39,7 @@ function Sobre() {
             <Text
               style={css`
                 color: #61ffca;
-                text-shadow: 5px 5px 5px #000000;
+                text-shadow: 7px 7px 7px #000000;
               `}
               fontWeight="bold"
               fontSize={2.2}
@@ -58,6 +61,9 @@ function Sobre() {
                 style={css`
                   text-decoration: none;
                   color: #61ffca;
+                  &:hover {
+                    color: #e4e133;
+                  }
                 `}
                 fontSize={1.3}
                 fontWeight="bold"
@@ -71,6 +77,9 @@ function Sobre() {
                 style={css`
                   text-decoration: none;
                   color: #c377cd;
+                  &:hover {
+                    color: #e4e133;
+                  }
                 `}
                 fontSize={1.3}
                 fontWeight="bold"
@@ -91,10 +100,10 @@ function Sobre() {
               `}
             >
               Sempre fui fissurado em Tecnologia, praticamente tudo relacionado
-              a isso me desperta curiosidade e interesse, foi isso que me fez
-              querer para minha vida. Tive meu primeiro contato com programacão
-              quando iniciei a faculdade e desde então, adoro criar experiencias
-              unicas por meio de tecnologia e com todo coração.
+              a isso me desperta curiosidade e interesse, e por isso direcionei
+              minha vida para viver disso. Tive meu primeiro contato com
+              programacão quando iniciei a faculdade e desde então, adoro criar
+              experiencias unicas por meio de tecnologia e com todo coração.
             </Text>
           </Cell>
           <Cell size={12}>
@@ -115,7 +124,7 @@ function Sobre() {
               fontWeight="bold"
               style={css`
                 color: white;
-                text-shadow: 5px 5px 5px #000000;
+                text-shadow: 7px 7px 7px #000000;
               `}
             >
               SKILLS & PROFICIENCY
@@ -141,7 +150,7 @@ function Sobre() {
               Languages:
             </Text>
           </Cell>
-          <Cell size={3}>
+          <Cell size={2}>
             <Text
               fontSize={1.2}
               style={css`
@@ -169,7 +178,7 @@ function Sobre() {
               <DiPython /> Python
             </Text>
           </Cell>
-          <Cell size={3}>
+          <Cell size={2}>
             <Text
               fontSize={1.2}
               style={css`
@@ -177,6 +186,16 @@ function Sobre() {
               `}
             >
               <SiKotlin /> Kotlin
+            </Text>
+          </Cell>
+          <Cell size={2}>
+            <Text
+              fontSize={1.2}
+              style={css`
+                color: white;
+              `}
+            >
+              <SiJava /> Java
             </Text>
           </Cell>
           <Cell size={3}>
@@ -229,7 +248,7 @@ function Sobre() {
                 color: white;
               `}
             >
-              <DiGit /> <DiGithubBadge /> Git & Github
+              <DiGit /> Git & <DiGithubBadge /> Github
             </Text>
           </Cell>
           <Cell size={3}>
@@ -242,7 +261,7 @@ function Sobre() {
               <SiJunit5 /> JUnit 5Test
             </Text>
           </Cell>
-          <Cell size={3}>
+          <Cell size={2}>
             <Text
               fontSize={1.2}
               style={css`
@@ -252,7 +271,17 @@ function Sobre() {
               <SiCypress /> Cypress
             </Text>
           </Cell>
-          <Cell size={3}>
+          <Cell size={2}>
+            <Text
+              fontSize={1.2}
+              style={css`
+                color: white;
+              `}
+            >
+              <SiDocker /> Docker
+            </Text>
+          </Cell>
+          <Cell size={2}>
             <Text
               fontSize={1.3}
               style={css`

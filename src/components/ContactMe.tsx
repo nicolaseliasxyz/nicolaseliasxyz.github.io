@@ -13,7 +13,7 @@ function ContactMe() {
         border: 0.2px solid;
         border-radius: 1rem;
         box-shadow: 5px 5px 5px #000000;
-        max-width: 900px;
+        max-width: 800px;
         padding: 2rem;
         color: white;
       `}
