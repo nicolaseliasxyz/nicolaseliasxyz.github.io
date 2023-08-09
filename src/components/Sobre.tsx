@@ -1,6 +1,6 @@
 import { VFlow, Text, Grid, Cell, Link } from "bold-ui";
 import { css } from "@emotion/core";
-import Eu from "../assets/eu.png";
+import Eu from "../assets/eu.jpg";
 import { DiGit, DiGithubBadge, DiJsBadge, DiLinux } from "react-icons/di";
 import { DiPython } from "react-icons/di";
 import {
@@ -54,8 +54,7 @@ function Sobre() {
                 color: white;
               `}
             >
-              Oi! Meu nome é Nicolas Elias atualmente sou Bolsista de
-              Desenvolvimento Full Stack no{" "}
+              Oi! Meu nome é Nicolas Elias atuo como Desenvolvedor de Software no{" "}
               <Link
                 href="https://portal.bridge.ufsc.br/portfolio-esus-aps/"
                 style={css`
@@ -87,9 +86,10 @@ function Sobre() {
               >
                 Universidade Federal de Santa Catarina
               </Link>{" "}
-              em Florianópolis - SC. Sou novo na área de desenvolvimento web
-              (pouco mais de um ano atuando na área), mas estou buscando me
-              especializar na parte de desenvolvimento full stack.
+                em Florianópolis - SC. Estou comprometido em aprimorar minhas habilidades e conhecimentos
+                na área de desenvolvimento de software, buscando oportunidades para aplicar os conceitos
+                aprendidos durante minha jornada acadêmica. Tenho como objetivo me tornar um profissional
+                qualificado e contribuir de forma significativa para o campo da computação.
             </Text>
           </Cell>
           <Cell size={12}>
@@ -101,8 +101,7 @@ function Sobre() {
             >
               Sempre fui fissurado em Tecnologia, praticamente tudo relacionado
               a isso me desperta curiosidade e interesse, e por isso direcionei
-              minha vida para viver disso. Tive meu primeiro contato com
-              programacão quando iniciei a faculdade e desde então, adoro criar
+              minha vida para viver disso, adoro criar
               experiencias unicas por meio de tecnologia e com todo coração.
             </Text>
           </Cell>
@@ -128,15 +127,6 @@ function Sobre() {
               `}
             >
               SKILLS & PROFICIENCY
-            </Text>
-            <Text
-              fontSize={1.2}
-              style={css`
-                color: white;
-                text-shadow: 5px 5px 5px #000000;
-              `}
-            >
-              (Em desenvolvimento)
             </Text>
           </Cell>
           <Cell size={12}>

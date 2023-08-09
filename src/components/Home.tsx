@@ -1,7 +1,6 @@
-import { VFlow, Text } from "bold-ui";
+import { VFlow, Text, Link, Button } from "bold-ui";
 import Typed from "react-typed";
 import { css } from "@emotion/core";
-import RenderThree from "./threejs/RenderThree";
 
 function Home() {
   return (
@@ -51,7 +50,7 @@ function Home() {
         >
           <Typed
             strings={[
-              "Desenvolvedor Full Stack.",
+              "Desenvolvedor de Software.",
               "Apaixonado por Tecnologia.",
               "Estudante de Ciências da Computação.",
             ]}
@@ -61,7 +60,6 @@ function Home() {
           />
         </Text>
       </VFlow>
-      <RenderThree />
     </VFlow>
   );
 }
