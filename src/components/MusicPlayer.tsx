@@ -1,77 +1,47 @@
-import { HFlow, VFlow, Text, Button } from "bold-ui";
-import { css } from "@emotion/core";
-import music from "../assets/music/She-Dont-Droid-Bishop.mp3";
+import music from "../assets/all-the-mountains-are-high.mp3";
 import { useState } from "react";
-import { BsFillPauseFill, BsPlay } from "react-icons/bs";
+import { FaPlay, FaPause } from "react-icons/fa";
 
-// so puxar isso em todas as paginas que continua tocando
-export const song = new Audio(music);
-song.volume = 0.2;
+interface MusicPlayerProps {
+  translate: boolean;
+}
 
-function MusicPlayer() {
-  let [isPause, setPause] = useState(false);
-  let [isPlaying, setPlaying] = useState(false);
+const song = new Audio(music);
+
+function MusicPlayer({ translate }: MusicPlayerProps) {
+  const [isPlaying, setPlaying] = useState(false);
 
   function play() {
     if (!isPlaying) {
-      song.play();
-      setPause(true);
-      setPlaying(true);
+      void song.play().then(() => setPlaying(true));
     } else {
       song.pause();
-      setPause(false);
       setPlaying(false);
     }
   }
+
   return (
-    <VFlow
-      style={css`
-        align-items: center;
-      `}
-    >
-      <HFlow>
-        <Text
-          style={css`
-            color: #c377cd;
-            margin-top: 1rem;
-          `}
-          fontSize={1.8}
-          fontWeight="bold"
-        >
-          PLAY ME!
-        </Text>
-        <Button
-          size="medium"
-          skin="outline"
-          style={css`
-            color: white;
-          `}
-          onClick={() => play()}
-        >
-          {!isPause ? (
-            <Text
-              fontWeight="bold"
-              fontSize={1.8}
-              style={css`
-                color: white;
-              `}
-            >
-              <BsPlay />
-            </Text>
-          ) : (
-            <Text
-              fontWeight="bold"
-              fontSize={1.8}
-              style={css`
-                color: white;
-              `}
-            >
-              <BsFillPauseFill />
-            </Text>
-          )}
-        </Button>
-      </HFlow>
-    </VFlow>
+    <div className="flex items-center justify-center">
+      <button
+        className="bg-gray-600 hover:bg-gray-400 text-white font-bold py-6 px-12 rounded inline-flex items-center text-lg"
+        onClick={play}
+      >
+        {isPlaying ? (
+          <FaPause className="mr-2 text-xl" />
+        ) : (
+          <FaPlay className="mr-2 text-xl" />
+        )}
+        <span>
+          {isPlaying
+            ? translate
+              ? "PAUSE"
+              : "PAUSAR"
+            : translate
+            ? "PLAY ME!"
+            : "DA PLAY AI!"}
+        </span>
+      </button>
+    </div>
   );
 }
 
